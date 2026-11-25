@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MapCidade CS Hub</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+<main>
+  <h1>MapCidade CS Hub</h1>
+  <form id="login">
+    <label>Demo username <input name="username" value="ana.lima" required></label>
+    <label>Demo password <input name="password" type="password" value="demo-password" required></label>
+    <button>Sign in</button>
+  </form>
+  <nav id="sections" aria-label="Hub sections" hidden>
+    <button value="/api/accounts">Accounts</button>
+    <button value="/api/hours">Hours</button>
+    <button value="/api/residents">Resident compliance</button>
+    <button value="/api/lineage">Data lineage</button>
+    <button id="logout">Sign out</button>
+  </nav>
+  <p id="status" role="status"></p>
+  <pre id="results"></pre>
+</main>
+</body>
+</html>
